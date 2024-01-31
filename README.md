@@ -19,7 +19,7 @@ name: Provision
 on:
   push:
     branches:
-      - main
+      - main 
 ```
 
 ### Terraform Plan:
