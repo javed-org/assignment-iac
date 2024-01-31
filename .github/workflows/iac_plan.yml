@@ -35,5 +35,5 @@ jobs:
            -backend-config="region=${{secrets.AWS_REGION}}" \
            -backend-config="key=main/terraform.tfstate"
          terraform validate
-         terraform plan 
+         terraform plan --var="aws_region=${{secrets.AWS_REGION}}" 
          
