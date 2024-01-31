@@ -40,7 +40,7 @@ jobs:
         run: |
           terraform init \
            -backend-config="bucket=${{secrets.TF_REMOTE_STATE_BUCKET}}" \
-           -backend-config="region=us-east-1" \
+           -backend-config="region=${{secrets.AWS_REGION}} \
            -backend-config="key=main/terraform.tfstate"
           terraform validate
           terraform destroy --var="aws_region=${{secrets.AWS_REGION}}" --auto-approve
