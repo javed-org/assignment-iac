@@ -10,7 +10,7 @@ This repository contains Terraform code organized into modular components to pro
 ## Prerequisite
 1. Create a S3 bucket manually for remote state management
 2. Create IAM Role for terraform provisioning (check customization section :arrow_down: )
-3. Updae the secrets in github settings(TF_REMOTE_STATE_BUCKET,AWS_REGION,AWS_ROLE_ARN)
+3. Updae the secrets in github settings(**TF_REMOTE_STATE_BUCKET,AWS_REGION,AWS_ROLE_ARN**)
 
 
 ## GitHub Actions Workflows
@@ -61,7 +61,7 @@ AWS resources like VPC, RDS, ECR, and EKS are created.
 - The Terraform code is organized into modules for better maintainability.
 - IAM role `assignment-terraform-1` is assumed for configuring AWS credentials.
 - AWS region is set to `eu-west-1`.
-- The Terraform state is stored remotely using the key `${{ env.BRANCH_NAME }}/terraform.tfstate`.
+- The Terraform state is stored remotely using the key `main/terraform.tfstate`.
 
 # Customization
 
