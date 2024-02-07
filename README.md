@@ -59,4 +59,5 @@ AWS resources like VPC, RDS, ECR, and EKS are created.
 TF_REMOTE_STATE_BUCKET=your-bucket-name
 AWS_REGION=region-name
 AWS_ROLE_ARN=aws-role-arn
+testing
 ```
